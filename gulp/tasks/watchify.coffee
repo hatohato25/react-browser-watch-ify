@@ -4,4 +4,5 @@ config		= require '../config'
 
 gulp.task 'watchify', ['react']
 gulp.task 'watch', ['build', 'watchify'], ->
+	gulp.watch config.jade.src, ['jade']
 	gulp.watch config.browserify.entries, ['react']
