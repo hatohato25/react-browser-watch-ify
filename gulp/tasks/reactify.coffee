@@ -1,9 +1,10 @@
 gulp		= require 'gulp'
+$			= do require 'gulp-load-plugins'
 browserify	= require 'browserify'
 source		= require 'vinyl-source-stream'
-config		= require '../config.coffee'
+config		= require '../config'
 
-gulp.task 'react', ->
+gulp.task 'react', $.watchify () ->
 	return browserify(
 		config.browserify
 	)
