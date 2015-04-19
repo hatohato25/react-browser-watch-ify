@@ -2,7 +2,7 @@ module.exports =
 	jade:
 		src:		['./src/jade/*.jade', '!./src/jade/_*.jade']
 		min:		'./public/views'
-		dest:		'./build'
+		dest:		'./build/views'
 	css:
 		src:		'./src/scss/*.scss'
 		min:		'./public/css'
