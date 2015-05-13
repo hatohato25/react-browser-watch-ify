@@ -17,7 +17,7 @@ module.exports =
 		entries:	'./src/coffee/app.cjsx'
 #		transform:	['reactify']
 		transform:	['coffee-reactify']
-		extensions:	['.cjsx']
+		extensions:	['.cjsx', '.coffee', '.js']
 		debug:		true
 	build:
 		depends:	['css', 'js']
